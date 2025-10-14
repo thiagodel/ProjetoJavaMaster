@@ -2,14 +2,13 @@ package bancario;
 
 import java.util.Locale;
 import java.util.Scanner;
-import bancario.ContaBancaria;
+
 
 public class BancoApp {
 
 
-    public static void main(String[] args) {
+    public static void iniciar(Scanner sc) {
 
-        Scanner sc = new Scanner(System.in);
         Locale.setDefault(Locale.US);
 
         System.out.print("Número da conta: ");
@@ -41,15 +40,13 @@ public class BancoApp {
 
         System.out.println(cont1.exibirDados());
 
-        System.out.printf("Digite um valor para sacar: ");
+        System.out.print("Digite um valor para sacar: ");
         double valorSaque = sc.nextDouble();
         cont1.sacar(valorSaque);
         System.out.println("Obs: Uma taxa de 5,00R$ foi aplicada pelo banco no valor do saque!!!");
 
         System.out.println(cont1.exibirDados());
 
-
-        sc.close();
 
 
     }

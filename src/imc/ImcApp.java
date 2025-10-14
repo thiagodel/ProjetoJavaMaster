@@ -3,9 +3,8 @@ package imc;
 import java.util.Scanner;
 
 public class ImcApp {
-    public static void main(String[] args) {
+    public static void iniciar(Scanner sc) {
 
-        Scanner sc = new Scanner(System.in);
 
         System.out.println("=== CALCULADORA DE IMC ===");
 
@@ -28,7 +27,6 @@ public class ImcApp {
         System.out.println("\n--- RESULTADO ---");
         pessoa.exibirDados();
 
-        sc.close();
     }
 }
 
