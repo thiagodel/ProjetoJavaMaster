@@ -3,10 +3,9 @@ package juros;
 import java.util.Scanner;
 
 public class JurosCompostosApp {
-    public static void main(String[] args) {
+    public static void iniciar(Scanner sc) {
 
 
-            Scanner sc = new Scanner(System.in);
 
             System.out.println("\n=== CALCULADORA DE JUROS COMPOSTOS ===");
             System.out.print("Capital Inicial: ");
@@ -22,7 +21,6 @@ public class JurosCompostosApp {
             System.out.printf("Montante final: R$ $%.2f\n", montante);
 
 
-            sc.close();
         }
 
 

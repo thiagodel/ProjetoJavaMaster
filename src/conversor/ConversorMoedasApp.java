@@ -3,8 +3,7 @@ package conversor;
 import java.util.Scanner;
 
 public class ConversorMoedasApp {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    public static void iniciar(Scanner sc) {
 
         System.out.println("\n=== CONVERSOR DE MOEDAS ===");
         System.out.print("Valor em Reais (R$): ");
@@ -16,6 +15,5 @@ public class ConversorMoedasApp {
         System.out.printf("Dólar: US$ %.2f\n", dolar);
         System.out.printf("Euro: € %.2f\n", euro);
 
-        sc.close();
     }
 }

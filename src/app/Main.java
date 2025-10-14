@@ -20,16 +20,15 @@ public class Main {
             System.out.println("2 - Calculadora de IMC");
             System.out.println("3 - Conversor de Moedas");
             System.out.println("4 - Calculadora de Juros Compostos");
-            System.out.println("5 - Gerenciador de Tarefas");
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opção: ");
             opcao = sc.nextInt();
 
         switch (opcao) {
-            case 1 -> BancoApp.main(new String[]{});
-            case 2 -> ImcApp.main(new String[]{});
-            case 3 -> ConversorMoedasApp.main(new String[]{});
-            case 4 -> JurosCompostosApp.main(new String[]{});
+            case 1 -> BancoApp.iniciar(sc);
+            case 2 -> ImcApp.iniciar(sc);
+            case 3 -> ConversorMoedasApp.iniciar(sc);
+            case 4 -> JurosCompostosApp.iniciar(sc);
             case 0 -> System.out.println("Encerrando programa....");
             default -> System.out.println("Opção inválida!");
         }
