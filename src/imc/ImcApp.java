@@ -9,7 +9,7 @@ public class ImcApp {
         System.out.println("=== CALCULADORA DE IMC ===");
 
         System.out.print("Nome: ");
-        String nome = sc.nextLine();
+        String nome = sc.next();
 
         System.out.print("Idade: ");
         int idade = sc.nextInt();
